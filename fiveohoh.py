@@ -5,7 +5,7 @@ from fastapi import FastAPI, Response
 from pydantic import BaseModel
 from typing import List, Tuple
 
-app = FastAPI(title="Flaky Test Server")
+app = FastAPI(title="FiveOhOh - Test Server")
 
 def parse_codes(env: str, default: str) -> List[Tuple[int, float]]:
     """
@@ -23,8 +23,8 @@ def parse_codes(env: str, default: str) -> List[Tuple[int, float]]:
 CODE_WEIGHTS = parse_codes("CODES", "200:0.8,429:0.1,500:0.05,503:0.05")
 PAYLOAD = json.loads(os.getenv("PAYLOAD", '{"status":"ok","service":"demo"}'))
 
-@app.get("/healthz")
-def healthz():
+@app.get("/health")
+def health():
     return {"ok": True}
 
 @app.get("/data")
