@@ -48,7 +48,7 @@ docker run --rm -p 8000:8000 \
 
 ## Endpoints
 
-- `GET /healthz` — Always returns `{"ok": true, "service": "FiveOhOh"}`.
+- `GET /health` — Always returns `{"ok": true, "service": "FiveOhOh"}`.
 - `GET /data` — Returns success or error JSON, with chaos injected based on settings.
 - `POST /data` — Same as `GET /data` but echoes back your request JSON on success.
 
