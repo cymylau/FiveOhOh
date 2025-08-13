@@ -29,7 +29,7 @@ docker run --rm -p 8000:8000 \
    -e CODES="200:0.7,429:0.1,500:0.1,503:0.1" \
    -e MAX_DELAY=3.0   -e MALFORMED_CHANCE=0.05 \
    -e DROP_CONN_CHANCE=0.02 \
-   richjjoh/fiveohoh:latest
+   ghcr.io/cymylau/fiveohoh:latest
 ```
 ---
 
