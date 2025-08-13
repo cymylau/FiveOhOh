@@ -91,7 +91,7 @@ CODES="200:0.8,500:0.8,503:0.4"
 ```
 produces a distribution of 40% 200, 40% 500, 20% 503.
 
+---
+## No Trust!
 
-**Don't trust me**
-
-Clone this repo, review the code and build it yourself! 
+Clone this repo, review the code, build it yourself and make any changes you like! 
