@@ -11,8 +11,7 @@ LABEL org.opencontainers.image.licenses="MIT"
 LABEL org.opencontainers.image.authors="richjjoh"
 
 # Create group, user and home directories
-RUN groupadd --gid 1000 fiveohoh \
-    && useradd --uid 1000 -gid fiveohoh --create-home fiveohoh
+RUN groupadd --gid 1000 fiveohoh && useradd --uid 1000 -gid fiveohoh --create-home fiveohoh
 
 # Install app
 WORKDIR /app
